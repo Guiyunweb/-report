@@ -22,6 +22,15 @@ const frameIn = [
         component: _import('system/index')
       },
       {
+        path: 'report/index',
+        name: 'index',
+        meta: {
+          title: '添加报表',
+          auth: true
+        },
+        component: _import('report/index')
+      },
+      {
         path: 'report/add',
         name: 'add',
         meta: {

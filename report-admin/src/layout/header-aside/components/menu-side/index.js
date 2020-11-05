@@ -9,25 +9,25 @@ export default {
     menuMixin
   ],
   render (h) {
-    return <div class="d2-layout-header-aside-menu-side">
-      <el-menu
-        collapse={ this.asideCollapse }
-        collapseTransition={ this.asideTransition }
-        uniqueOpened={ true }
-        defaultActive={ this.$route.fullPath }
-        ref="menu"
-        onSelect={ this.handleMenuSelect }>
-        { this.aside.map(menu => createMenu.call(this, h, menu)) }
-      </el-menu>
-      {
-        this.aside.length === 0 && !this.asideCollapse
-          ? <div class="d2-layout-header-aside-menu-empty" flex="dir:top main:center cross:center">
-            <d2-icon name="inbox"></d2-icon>
-            <span>没有侧栏菜单</span>
-          </div>
-          : null
-      }
-    </div>
+    // return <div class="d2-layout-header-aside-menu-side">
+    //   <el-menu
+    //     collapse={ this.asideCollapse }
+    //     collapseTransition={ this.asideTransition }
+    //     uniqueOpened={ true }
+    //     defaultActive={ this.$route.fullPath }
+    //     ref="menu"
+    //     onSelect={ this.handleMenuSelect }>
+    //     { this.aside.map(menu => createMenu.call(this, h, menu)) }
+    //   </el-menu>
+    //   {
+    //     this.aside.length === 0 && !this.asideCollapse
+    //       ? <div class="d2-layout-header-aside-menu-empty" flex="dir:top main:center cross:center">
+    //         <d2-icon name="inbox"></d2-icon>
+    //         <span>没有侧栏菜单</span>
+    //       </div>
+    //       : null
+    //   }
+    // </div>
   },
   data () {
     return {
